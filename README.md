@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Weather App - README</title>
 </head>
 <body>
     <header>
@@ -19,7 +18,6 @@
             <ul>
                 <li>Real-time weather updates</li>
                 <li>Search by city name</li>
-                <li>Dynamic background color based on temperature</li>
                 <li>Detailed weather information including temperature, conditions, humidity, and wind speed</li>
             </ul>
         </section>
