@@ -6,7 +6,7 @@
 </head>
 <body>
     <header>
-        <h1 style="color: #4a90e2;">Dynamic Weather App</h1>
+        <h1 style="color: #4a90e2;">Dynamic Weather Explorer</h1>
     </header>
     <main>
         <section>
