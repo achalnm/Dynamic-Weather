@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Weather App</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="search-box">
+                <input type="text" id="city-input" placeholder="Enter city name...">
+                <button id="search-btn">Get Weather</button>
+            </div>
+            <div id="weather-display" class="weather-display">
+                <h2 id="city-name"></h2>
+                <div id="weather-info">
+                    <div class="weather-data" id="temperature"></div>
+                    <div class="weather-data" id="condition"></div>
+                    <div class="weather-data" id="humidity"></div>
+                    <div class="weather-data" id="wind-speed"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Made by @achalnm</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/achal-n-35153821b/" target="_blank">LinkedIn</a>
+            <a href="https://www.instagram.com/achal_n26" target="_blank">Instagram</a>
+            <a href="https://github.com/achalnm" target="_blank">GitHub</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
