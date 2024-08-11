@@ -7,18 +7,18 @@ document.getElementById('search-btn').addEventListener('click', () => {
 
 async function getCoordinates(city) {
     try {
-        const apiKey = '3d94d653fc754e72bf868f7531136541'; // Your OpenCage API key
+        const apiKey = '3d94d653fc754e72bf868f7531136541';
         const response = await fetch(`https://api.opencagedata.com/geocode/v1/json?q=${encodeURIComponent(city)}&key=${apiKey}`);
         const data = await response.json();
 
         if (data.results && data.results.length > 0) {
-            const coords = data.results[0].geometry; // Get the first result
+            const coords = data.results[0].geometry;
             getWeather(coords.lat, coords.lng);
         } else {
             alert('City not found. Please try again.');
         }
     } catch (error) {
-        console.error('Error:', error); // Log the error to the console for debugging
+        console.error('Error:', error);
         alert('Error fetching coordinates. Please try again later.');
     }
 }
@@ -34,7 +34,7 @@ async function getWeather(lat, lon) {
             alert('Weather data not found. Please try again.');
         }
     } catch (error) {
-        console.error('Error:', error); // Log the error to the console for debugging
+        console.error('Error:', error);
         alert('Error fetching weather data. Please try again later.');
     }
 }
@@ -51,13 +51,11 @@ function displayWeather(data) {
 }
 
 function getWeatherCondition(code) {
-    // Map weather codes to conditions
     const conditions = {
         '0': 'Clear sky',
         '1': 'Mainly clear',
         '2': 'Partly cloudy',
         '3': 'Overcast',
-        // Add more codes as needed
     };
     return conditions[code] || 'Unknown condition';
 }
